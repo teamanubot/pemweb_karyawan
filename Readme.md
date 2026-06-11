@@ -2,12 +2,12 @@
 
 #### Note : Lakukan perintah tanpa tanda kutip "
 
-1. "docker compose up -d --build" (pertama kali) atau docker compose up -d (jika udh pernah build)
+1. "docker compose up -d --build" (pertama kali) atau "docker compose up -d" (jika udh pernah build)
 2. "code ." (buka vscode)
 3. "docker exec -it pemweb bash"
 4. "composer create-project --prefer-dist raugadh/fila-starter ." (create project laravel filament)
 5. "php artisan key:generate" (generate project key)
-6. "php artisan storage:iink" (ngebuat storage project)
+6. "php artisan storage:link" (ngebuat storage project)
 7. "chown -R www-data:www-data storage/*" (memberikan akses ke storage)
 8. "chown -R www-data:www-data bootstrap/*" (memberikan akses ke bootstrap)
 9. kembali ke vscode lalu buka src/.env lalu lakukan perubahan seperti langkah selanjutnya
@@ -31,3 +31,12 @@
 27. "npm run build" (ngebuild assets frontend)
 28. "php artisan project:init" (optimizer, hapus cache, cookie web, dan load filament)
 29. buka localhost dengan browser Username : [admin@admin.com](mailto:admin@admin.com) Password : password
+
+
+# Perintah Docker
+
+#### Note : Lakukan perintah tanpa tanda kutip "
+1. "docker compose down" (untuk menghapus kontainer yang telah dibuat)
+2. "docker compose stop" (untuk mematikan semua imgaes dan kontainer yang berjalan sesuai docker-compose.yml tanpa menghapus kontainernya)
+3. "docker compose start" (untuk menjalankan kontainer yang telah ada sesuai docker-compose.yml)
+4. "docker ps" (untuk melihat kontainer yang berjalan)
