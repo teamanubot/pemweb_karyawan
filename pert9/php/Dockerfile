@@ -1,4 +1,4 @@
-FROM php:8.3-fpm
+FROM php:8.4-fpm
 
 ENV PS1="\u@\h:\w\\$ "
 ENV TZ="Asia/Jakarta"
